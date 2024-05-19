@@ -40,8 +40,6 @@ namespace TheBestFormatter
         private static MEDPARAMSTR Deserialize(string str)
         {
             str = ReplaceBr(str);
-            //str = AddComma(str);
-            //str = AddQuotes(str);
             str = RemoveXml(str);
             str = RemoveSymbols(str);
 
@@ -57,18 +55,6 @@ namespace TheBestFormatter
             return angleBrackets.Aggregate(str, (current, pair) => current.Replace(pair.Value, pair.Key));
         }
 
-        //private static string AddComma(string str)
-        //{
-        //    return str.Replace("}", "},").Remove(str.Length - 1).Insert(0, "[").Insert(str.Length - 1, "]");
-        //}
-
-        //private static string AddQuotes(string str)
-        //{
-        //    var quotesPairs = new Dictionary<string, string> { { "\"1.0\"", "1.0" }, { "\"windows-1251\"", "windows-1251" } };
-
-        //    return quotesPairs.Aggregate(str, (current, pair) => current.Replace(pair.Value, pair.Key));
-        //}
-
         private static string RemoveXml(string str)
         {
             return str.Replace("<?xml version=1.0 encoding=windows-1251?>", "");
@@ -76,7 +62,7 @@ namespace TheBestFormatter
 
         private static string RemoveSymbols(string str)
         {
-            var list = new List<string>() { "\r", "\n", "•", "\t" };
+            var list = new List<string>() { "\\r", "\\n", "•", "\\t" };
 
             return list.Aggregate(str, (current, symb) => current.Replace(symb, ""));
         }
