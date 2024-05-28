@@ -20,7 +20,10 @@ namespace TheBestFormatter
                 var perv = Deserialize(xmlPair.Perv);
                 var uzi = Deserialize(xmlPair.Uzi);
 
-                dataForModels.Add(DataForModelMapper.Map(perv.ParamStr, uzi.ParamStr));
+                var pairDataForModels = DataForModelMapper.Map(perv.ParamStr, uzi.ParamStr);
+
+                dataForModels.Add(pairDataForModels.Item1);
+                dataForModels.Add(pairDataForModels.Item2);
             }
 
             using (var writer = new StreamWriter("Resource\\Result.csv"))
@@ -41,7 +44,6 @@ namespace TheBestFormatter
         {
             str = ReplaceBr(str);
             str = RemoveXml(str);
-            str = RemoveSymbols(str);
 
             var serializer = new XmlSerializer(typeof(MEDPARAMSTR));
             using var reader = new StringReader(str);
@@ -58,13 +60,6 @@ namespace TheBestFormatter
         private static string RemoveXml(string str)
         {
             return str.Replace("<?xml version=1.0 encoding=windows-1251?>", "");
-        }
-
-        private static string RemoveSymbols(string str)
-        {
-            var list = new List<string>() { "\\r", "\\n", "•", "\\t" };
-
-            return list.Aggregate(str, (current, symb) => current.Replace(symb, ""));
         }
     }
 }
