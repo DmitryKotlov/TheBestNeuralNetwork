@@ -4,6 +4,77 @@ namespace TheBestDomain
 {
     public class DataForModel
     {
+        public int Gender { get; set; }
+        public int Age { get; set; }
+
+        public required Complaints Complaints { get; set; }
+        public required Localizations Localizations { get; set; }
+        public required Uzi Uzi { get; set; }
+        public required Operations Operations { get; set; }
+    }
+
+    public class Complaints
+    {
+        public bool Varikoz { get; set; }
+        public bool Uplotnenie { get; set; }
+        public bool Potemnenie { get; set; }
+        public bool ZazhivshayaYazva { get; set; }
+        public bool OtkritayaYazva { get; set; }
+    }
+
+    public class Localizations
+    {
+        public bool OtekiEst { get; set; }
+        public bool? GlubokieVeniProhodimi { get; set; }
+        public bool? Tromboflebit { get; set; }
+        public bool? Boleznennost { get; set; }
+
+        public required Localization VarikozLocalization { get; set; }
+        public required Localization TeleoangioektaziiLocalization { get; set; }
+    }
+
+    public class Localization
+    {
+        public bool IsAny { get; set; }
+        public bool Bedro { get; set; }
+        public bool Golen { get; set; }
+        public bool Stopa { get; set; }
+    }
+
+    public class Uzi
+    {
+        public bool NesostVeni { get; set; }
+        public required UziData Sfs { get; set; }
+        public required UziData Bpv { get; set; }
+        public required UziData Sps { get; set; }
+        public required UziData Mpv { get; set; }
+    }
+
+    public class UziData
+    {
+        public bool? Reflux { get; set; }
+        public AbstractDiameter? Diameter { get; set; }
+    }
+
+    public abstract class AbstractDiameter
+    {
+    }
+
+    public class Diameter : AbstractDiameter
+    {
+        public float? Value { get; set; }
+    }
+
+    public class ExtendedDiameter : AbstractDiameter
+    {
+        public float? PredostSegment { get; set; }
+        public float? SredTretBedra { get; set; }
+        public float? UrovenKolena { get; set; }
+        public float? VerhSredTretGoleni { get; set; }
+    }
+
+    public class Operations
+    {
         [Description("ЭВЛК МПВ")]
         public bool EvlkMpv { get; set; }
         [Description("ЭВЛК БПВ")]
@@ -18,49 +89,6 @@ namespace TheBestDomain
         public bool Cross { get; set; }
         [Description("СКЛЕРОТЕРАПИЯ")]
         public bool Scler { get; set; }
-
-        // Общие
-
-        public int? perv_localis_VarikoznieVeni { get; set; }
-        public int? perv_localis_Teleangioektazii { get; set; }
-        public bool? perv_localis_GlubokieVeniProhodimi { get; set; }
-        public bool? perv_localis_Tromboflebit { get; set; }
-        public bool? perv_localis_Boleznennost { get; set; }
-
-        //
-
-        public int? perv_n3goleni { get; set; }
-        public int? perv_n3bedra { get; set; }
-        public int? perv_s3goleni { get; set; }
-        public int? perv_s3bedra { get; set; }
-        public int? perv_v3goleni { get; set; }
-        public int? perv_v3bedra { get; set; }
-
-        public int? perv_localis_OtekiEst { get; set; }
-        public int? perv_localis_LokalizaciaVarikozVen { get; set; }
-        public int? perv_localis_LokalizaciaVarikozVenBedro { get; set; }
-        public int? perv_localis_LokalizaciaVarikozVenGolen { get; set; }
-        public int? perv_localis_LokalizaciaVarikozVenStopa { get; set; }
-
-        public int? perv_localis_LokalizaciaTeleoangioektazii { get; set; }
-        public int? perv_localis_LokalizaciaTeleoangioektaziiBedro { get; set; }
-        public int? perv_localis_LokalizaciaTeleoangioektaziiGolen { get; set; }
-        public int? perv_localis_LokalizaciaTeleoangioektaziiStopa { get; set; }
-
-        public int? perv_complains_varikoz { get; set; }
-        public int? perv_complains_uplotnenie { get; set; }
-        public int? perv_complains_potemnenie { get; set; }
-        public int? perv_complains_zazhivshayaYazva { get; set; }
-        public int? perv_complains_otkritayaYazva { get; set; }
-
-        public string uzi_SfsDiameter { get; set; }
-        public bool? uzi_SfsReflux { get; set; }
-        public string uzi_BpvDiameter { get; set; }
-        public bool? uzi_BpvReflux { get; set; }
-        public string uzi_SpsDiameter { get; set; }
-        public bool? uzi_SpsReflux { get; set; }
-        public string uzi_MpvDiameter { get; set; }
-        public bool? uzi_MpvReflux { get; set; }
-        public int? uzi_NesostVeni { get; set; }
+        public bool IsNeedAnyOperation { get; set; }
     }
 }
