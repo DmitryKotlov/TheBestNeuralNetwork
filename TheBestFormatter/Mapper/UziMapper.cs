@@ -5,7 +5,7 @@ namespace TheBestFormatter.Mapper
 {
     public static class UziMapper
     {
-        public static UziData Map(string memo, bool withAdditionalData = false)
+        public static UziData Map(string memo)
         {
             var strings = SplitFormatStrings(memo);
 
@@ -13,16 +13,21 @@ namespace TheBestFormatter.Mapper
 
             foreach (var subString in strings)
             {
-                if (withAdditionalData)
-                {
-                    FillExtendedDiameter(data, subString);
-                }
-                else
+                //if (withAdditionalData)
+                //{
+                //    FillExtendedDiameter(data, subString);
+                //}
+                //else
                 {
                     FillDiameter(data, subString);
                 }
 
                 FillReflux(data, subString);
+            }
+
+            if (data.Diameter is null)
+            {
+                throw new Exception("Diameter not found");
             }
 
             return data;
@@ -39,9 +44,37 @@ namespace TheBestFormatter.Mapper
                 .Split(@"\R\N");
         }
 
-        private static void FillExtendedDiameter(UziData data, string subString)
+        public static UziDataExtended MapExt(string memo)
         {
-            if (data.Diameter is not null || !subString.Contains("ДИАМЕТР"))
+            var strings = SplitFormatStrings(memo);
+
+            var data = new UziDataExtended();
+
+            foreach (var subString in strings)
+            {
+                //if (withAdditionalData)
+                {
+                    FillExtendedDiameter(data, subString);
+                }
+                //else
+                //{
+                //    FillDiameter(data, subString);
+                //}
+
+                FillReflux(data, subString);
+            }
+
+            if (!data.PredostSegment.HasValue)
+            {
+                throw new Exception("Diameter not found");
+            }
+
+            return data;
+        }
+
+        private static void FillExtendedDiameter(UziDataExtended extendedDiameter, string subString)
+        {
+            if (extendedDiameter.PredostSegment.HasValue || !subString.Contains("ДИАМЕТР"))
             {
                 return;
             }
@@ -55,7 +88,7 @@ namespace TheBestFormatter.Mapper
                 throw new Exception("Diameter not found");
             }
 
-            var extendedDiameter = new ExtendedDiameter();
+            //var extendedDiameter = new UziDataExtended();
 
             for (var i = 0; i < diameterSplit.Length; i++)
             {
@@ -82,8 +115,6 @@ namespace TheBestFormatter.Mapper
                     throw new Exception("Diameter not found");
                 }
             }
-
-            data.Diameter = extendedDiameter;
         }
 
         private static void FillDiameter(UziData data, string subString)
@@ -98,10 +129,7 @@ namespace TheBestFormatter.Mapper
 
             if (float.TryParse(strNumber, out var value))
             {
-                data.Diameter = new Diameter
-                {
-                    Value = value
-                };
+                data.Diameter = value;
             }
             else
             {
@@ -110,6 +138,23 @@ namespace TheBestFormatter.Mapper
         }
 
         private static void FillReflux(UziData data, string subString)
+        {
+            if (!subString.Contains("РЕФЛЮКС"))
+            {
+                return;
+            }
+
+            if (subString.Contains('+'))
+            {
+                data.Reflux = true;
+            }
+            else if (subString.Contains('-'))
+            {
+                data.Reflux = false;
+            }
+        }
+
+        private static void FillReflux(UziDataExtended data, string subString)
         {
             if (!subString.Contains("РЕФЛЮКС"))
             {

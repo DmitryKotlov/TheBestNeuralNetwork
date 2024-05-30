@@ -7,11 +7,24 @@ namespace TheBestFormatter.Mapper
     {
         public static IEnumerable<DataForModel> Map(PARAM_STR perv, PARAM_STR uzi, int age, int gender)
         {
-            var dataForModels = new[]
+            var dataForModels = new List<DataForModel>();
+
+            try
             {
-                MapDataForLeftLeg(perv, uzi),
-                MapDataForRightLeg(perv, uzi)
-            };
+                var data = MapDataForLeftLeg(perv, uzi);
+
+                if (data is not null) { dataForModels.Add(data); }
+            }
+            catch (Exception ex) { }
+
+            try
+            {
+                var data = MapDataForRightLeg(perv, uzi);
+
+                if (data is not null) { dataForModels.Add(data); }
+            }
+            catch (Exception ex) { }
+
 
             FillCommonProperties(dataForModels, perv, age, gender);
 
@@ -52,7 +65,7 @@ namespace TheBestFormatter.Mapper
                 {
                     NesostVeni = uzi.Medcheckbox11.Medparamstr.ParamStr.Checked,
                     Sfs = UziMapper.Map(uzi.Medmemo3.Medparamstr.ParamStr.Lines),
-                    Bpv = UziMapper.Map(uzi.Medmemo5.Medparamstr.ParamStr.Lines, true),
+                    Bpv = UziMapper.MapExt(uzi.Medmemo5.Medparamstr.ParamStr.Lines),
                     Sps = UziMapper.Map(uzi.Medmemo7.Medparamstr.ParamStr.Lines),
                     Mpv = UziMapper.Map(uzi.Medmemo9.Medparamstr.ParamStr.Lines)
                 },
@@ -96,7 +109,7 @@ namespace TheBestFormatter.Mapper
                 {
                     NesostVeni = uzi.Medcheckbox10.Medparamstr.ParamStr.Checked,
                     Sfs = UziMapper.Map(uzi.Medmemo2.Medparamstr.ParamStr.Lines),
-                    Bpv = UziMapper.Map(uzi.Medmemo4.Medparamstr.ParamStr.Lines, true),
+                    Bpv = UziMapper.MapExt(uzi.Medmemo4.Medparamstr.ParamStr.Lines),
                     Sps = UziMapper.Map(uzi.Medmemo6.Medparamstr.ParamStr.Lines),
                     Mpv = UziMapper.Map(uzi.Medmemo8.Medparamstr.ParamStr.Lines)
                 },

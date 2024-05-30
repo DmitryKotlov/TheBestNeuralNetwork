@@ -45,28 +45,25 @@ namespace TheBestDomain
     {
         public bool NesostVeni { get; set; }
         public required UziData Sfs { get; set; }
-        public required UziData Bpv { get; set; }
+        public required UziDataExtended Bpv { get; set; }
         public required UziData Sps { get; set; }
         public required UziData Mpv { get; set; }
     }
 
     public class UziData
     {
-        public bool? Reflux { get; set; }
-        public AbstractDiameter? Diameter { get; set; }
+        public bool Reflux { get; set; }
+        public float? Diameter { get; set; }
     }
 
-    public abstract class AbstractDiameter
-    {
-    }
+    //public class Diameter
+    //{
+    //    public float? Value { get; set; }
+    //}
 
-    public class Diameter : AbstractDiameter
+    public class UziDataExtended
     {
-        public float? Value { get; set; }
-    }
-
-    public class ExtendedDiameter : AbstractDiameter
-    {
+        public bool Reflux { get; set; }
         public float? PredostSegment { get; set; }
         public float? SredTretBedra { get; set; }
         public float? UrovenKolena { get; set; }
