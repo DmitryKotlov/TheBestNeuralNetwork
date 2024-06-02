@@ -1,0 +1,226 @@
+﻿@model TheBestWebInterface.Models.DataForModelViewModel
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form asp-action="Index">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div>
+            <div>
+                <h5>Пациент</h5>
+                <div class="row">
+                    <div class="col-sm-2" class="form-group">
+                        <label asp-for="Age" class="control-label"></label>
+                        <input asp-for="Age" class="form-control" />
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-3"></div>
+                    <div class="w-100"></div>
+                    <div class="col-sm-2" class="form-group">
+                        <label asp-for="Gender" class="control-label"></label>
+                        <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <hr />
+            </div>
+            <div>
+                <h5>Жалобы</h5>
+                <div class="row">
+                    <div class="col" class="form-group">
+                        <label asp-for="Complaints.Varikoz" class="control-label"></label>
+                        <input asp-for="Complaints.Varikoz" />
+                        <span asp-validation-for="Complaints.Varikoz" class="text-danger"></span>
+                    </div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Complaints.Uplotnenie" class="control-label"></label>
+                        <input asp-for="Complaints.Uplotnenie" />
+                        <span asp-validation-for="Complaints.Uplotnenie" class="text-danger"></span>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Complaints.Potemnenie" class="control-label"></label>
+                        <input asp-for="Complaints.Potemnenie" />
+                        <span asp-validation-for="Complaints.Potemnenie" class="text-danger"></span>
+                    </div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Complaints.ZazhivshayaYazva" class="control-label"></label>
+                        <input asp-for="Complaints.ZazhivshayaYazva" />
+                        <span asp-validation-for="Complaints.ZazhivshayaYazva" class="text-danger"></span>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Complaints.OtkritayaYazva" class="control-label"></label>
+                        <input asp-for="Complaints.OtkritayaYazva" />
+                        <span asp-validation-for="Complaints.OtkritayaYazva" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div>
+                <h5>Локализация</h5>
+                <div class="row">
+                    <div class="col" class="form-group">
+                        <label asp-for="Localizations.OtekiEst" class="control-label"></label>
+                        <input asp-for="Localizations.OtekiEst" />
+                        <span asp-validation-for="Localizations.OtekiEst" class="text-danger"></span>
+                    </div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Localizations.Boleznennost" class="control-label"></label>
+                        <input asp-for="Localizations.Boleznennost" />
+                        <span asp-validation-for="Localizations.Boleznennost" class="text-danger"></span>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Localizations.Tromboflebit" class="control-label"></label>
+                        <input asp-for="Localizations.Tromboflebit" />
+                        <span asp-validation-for="Localizations.Tromboflebit" class="text-danger"></span>
+                    </div>
+                    <div class="col" class="form-group">
+                        <label asp-for="Localizations.GlubokieVeniProhodimi" class="control-label"></label>
+                        <input asp-for="Localizations.GlubokieVeniProhodimi" />
+                        <span asp-validation-for="Localizations.GlubokieVeniProhodimi" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class ="col-sm">
+                        <h6>Локализация варикозных вен</h6>
+                        <div class="form-group">
+                            <label asp-for="Localizations.VarikozLocalization.Bedro" class="control-label"></label>
+                            <input asp-for="Localizations.VarikozLocalization.Bedro" />
+                            <span asp-validation-for="Localizations.VarikozLocalization.Bedro" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Localizations.VarikozLocalization.Golen" class="control-label"></label>
+                            <input asp-for="Localizations.VarikozLocalization.Golen" />
+                            <span asp-validation-for="Localizations.VarikozLocalization.Golen" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Localizations.VarikozLocalization.Stopa" class="control-label"></label>
+                            <input asp-for="Localizations.VarikozLocalization.Stopa" />
+                            <span asp-validation-for="Localizations.VarikozLocalization.Stopa" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <h6>Локализация телеангиоэктазии</h6>
+                        <div class="form-group">
+                            <label asp-for="Localizations.TeleoangioektaziiLocalization.Bedro" class="control-label"></label>
+                            <input asp-for="Localizations.TeleoangioektaziiLocalization.Bedro" />
+                            <span asp-validation-for="Localizations.TeleoangioektaziiLocalization.Bedro" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Localizations.TeleoangioektaziiLocalization.Golen" class="control-label"></label>
+                            <input asp-for="Localizations.TeleoangioektaziiLocalization.Golen" />
+                            <span asp-validation-for="Localizations.TeleoangioektaziiLocalization.Golen" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Localizations.TeleoangioektaziiLocalization.Stopa" class="control-label"></label>
+                            <input asp-for="Localizations.TeleoangioektaziiLocalization.Stopa" />
+                            <span asp-validation-for="Localizations.TeleoangioektaziiLocalization.Stopa" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div>
+                <h5>Узи</h5>
+                <div class="form-group">
+                    <label asp-for="Uzi.NesostVeni" class="control-label"></label>
+                    <input asp-for="Uzi.NesostVeni" />
+                    <span asp-validation-for="Uzi.NesostVeni" class="text-danger"></span>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col">
+                        <h6>СФС</h6>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Sfs.Reflux" class="control-label"></label>
+                            <input asp-for="Uzi.Sfs.Reflux" />
+                            <span asp-validation-for="Uzi.Sfs.Reflux" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Sfs.Value" class="control-label"></label>
+                            <input asp-for="Uzi.Sfs.Value" class="form-control" />
+                            <span asp-validation-for="Uzi.Sfs.Value" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6>СПС</h6>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Sps.Reflux" class="control-label"></label>
+                            <input asp-for="Uzi.Sps.Reflux" />
+                            <span asp-validation-for="Uzi.Sps.Reflux" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Sps.Value" class="control-label"></label>
+                            <input asp-for="Uzi.Sps.Value" class="form-control" />
+                            <span asp-validation-for="Uzi.Sps.Value" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <h6>БПВ</h6>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Bpv.Reflux" class="control-label"></label>
+                            <input asp-for="Uzi.Bpv.Reflux" />
+                            <span asp-validation-for="Uzi.Bpv.Reflux" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Bpv.PredostSegment" class="control-label"></label>
+                            <input asp-for="Uzi.Bpv.PredostSegment" class="form-control" />
+                            <span asp-validation-for="Uzi.Bpv.PredostSegment" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Bpv.SredTretBedra" class="control-label"></label>
+                            <input asp-for="Uzi.Bpv.SredTretBedra" class="form-control" />
+                            <span asp-validation-for="Uzi.Bpv.SredTretBedra" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Bpv.UrovenKolena" class="control-label"></label>
+                            <input asp-for="Uzi.Bpv.UrovenKolena" class="form-control" />
+                            <span asp-validation-for="Uzi.Bpv.UrovenKolena" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Bpv.VerhSredTretGoleni" class="control-label"></label>
+                            <input asp-for="Uzi.Bpv.VerhSredTretGoleni" class="form-control" />
+                            <span asp-validation-for="Uzi.Bpv.VerhSredTretGoleni" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6>МПВ</h6>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Mpv.Reflux" class="control-label"></label>
+                            <input asp-for="Uzi.Mpv.Reflux" />
+                            <span asp-validation-for="Uzi.Mpv.Reflux" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Uzi.Mpv.Value" class="control-label"></label>
+                            <input asp-for="Uzi.Mpv.Value" class="form-control" />
+                            <span asp-validation-for="Uzi.Mpv.Value" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+            <div class="align-content-center">
+                <div class="form-group">
+                    <input type="submit" value="Получить рекомендацию" class="btn btn-primary" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Рекомендация</label>
+                <textarea asp-for="Result" class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+    </form>
+</div>
