@@ -24,8 +24,8 @@ namespace TheBestWebInterface.Controllers
         public IActionResult GetResult(DataForModelViewModel data)
         {
             //var dto = data.ToDto();
-            var predicts = _predictService.GetPredicts(null);
 
+            var predicts = _predictService.GetPredicts(null, data.Age);
             ViewData["Result"] = predicts;
             return View("Index", data);
         }
