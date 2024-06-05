@@ -26,6 +26,7 @@ namespace TheBestWebInterface.Controllers
             //var dto = data.ToDto();
             var predicts = _predictService.GetPredicts(null);
 
+            ViewData["Result"] = predicts;
             return View("Index", data);
         }
 
