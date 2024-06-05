@@ -9,7 +9,10 @@
     {
         public IEnumerable<PredictDto> GetPredicts(DataForModelDto data)
         {
-            return [new PredictDto { Name = "ЭВЛК", Probability = 0.78F }, new PredictDto { Name = "СКЛЕР", Probability = 0.99F }];
+            return [
+                new PredictDto { Name = "ЭВЛК", Probability = " - вероятность 56%" },
+                new PredictDto { Name = "СКЛЕР", Probability = " - вероятность 32%" }
+                ];
         }
     }
 }
