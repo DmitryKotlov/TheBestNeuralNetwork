@@ -1,5 +1,4 @@
-using Microsoft.Extensions.ML;
-using static TheBestWebInterface.MLModel;
+using TheBestWebInterface.Services;
 
 namespace TheBestWebInterface
 {
@@ -11,13 +10,8 @@ namespace TheBestWebInterface
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IPredictService, PredictService>();
 
-            builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
-                .FromFile("Ml/MLModel.mlnet");
-            //builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
-            //    .FromFile("SentimentAnalysis.zip");
-            //builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
-            //    .FromFile("SentimentAnalysis.zip");
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

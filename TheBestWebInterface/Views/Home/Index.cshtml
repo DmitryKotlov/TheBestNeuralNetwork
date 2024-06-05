@@ -9,7 +9,7 @@
 }
 
 <div class="container">
-    <form asp-action="Index">
+    <form asp-action="GetResult">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div>
             <div>
@@ -219,7 +219,8 @@
 
             <div class="form-group">
                 <label for="comment">Рекомендация</label>
-                <textarea asp-for="Result" class="form-control" rows="5"></textarea>
+                <h6>@ViewData["Result"]</h6>
+                @* <label asp-for="Result" class="form-control" rows="5"></label> *@
             </div>
         </div>
     </form>

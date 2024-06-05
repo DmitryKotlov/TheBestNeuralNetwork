@@ -1,24 +1,20 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TheBestWebInterface.Models
 {
     public class DataForModelViewModel
     {
-        //[System.ComponentModel.DataAnnotations.]
-        [Required]
+        [Required(ErrorMessage = "Поле обязательно для заполнения")]
+        [Range(0, 150, ErrorMessage = "Значение должно быть в диапазоне от 0 до 150")]
         [Display(Name = "Возраст")]
         public int Age { get; set; }
-        [Required]
+
         [Display(Name = "Пол")]
         public Gender Gender { get; set; }
+
         public required ComplaintsViewModel Complaints { get; set; }
         public required LocalizationsViewModel Localizations { get; set; }
         public required UziViewModel Uzi { get; set; }
-
-        //[BindProperty]
-        public string Result { get; set; }
     }
 
     public enum Gender
@@ -31,35 +27,33 @@ namespace TheBestWebInterface.Models
 
     public class ComplaintsViewModel
     {
-        [Required]
         [Display(Name = "Варикозные вены")]
         public bool Varikoz { get; set; }
-        [Required]
+
         [Display(Name = "Уплотнение кожи на голени")]
         public bool Uplotnenie { get; set; }
-        [Required]
+
         [Display(Name = "Потемнение кожи на голени")]
         public bool Potemnenie { get; set; }
-        [Required]
+
         [Display(Name = "Зажившая трофическая язва")]
         public bool ZazhivshayaYazva { get; set; }
-        [Required]
+
         [Display(Name = "Открытая трофическая язва")]
         public bool OtkritayaYazva { get; set; }
     }
 
     public class LocalizationsViewModel
     {
-        [Required]
         [Display(Name = "Отеки")]
         public bool OtekiEst { get; set; }
-        [Required]
+
         [Display(Name = "Глубокие вены проходимы")]
         public bool GlubokieVeniProhodimi { get; set; }
-        [Required]
+
         [Display(Name = "Тромбофлебит")]
         public bool Tromboflebit { get; set; }
-        [Required]
+
         [Display(Name = "Болезненность")]
         public bool Boleznennost { get; set; }
 
@@ -69,21 +63,18 @@ namespace TheBestWebInterface.Models
 
     public class LocalizationViewModel
     {
-        public bool IsAny { get; set; }
-        [Required]
         [Display(Name = "Бедро")]
         public bool Bedro { get; set; }
-        [Required]
+
         [Display(Name = "Голень")]
         public bool Golen { get; set; }
-        [Required]
+
         [Display(Name = "Стопа")]
         public bool Stopa { get; set; }
     }
 
     public class UziViewModel
     {
-        [Required]
         [Display(Name = "Несостоятельные вены")]
         public bool NesostVeni { get; set; }
         public required UziData Sfs { get; set; }
@@ -94,10 +85,11 @@ namespace TheBestWebInterface.Models
 
     public class UziData
     {
-        [Required]
         [Display(Name = "Рефлюкс")]
         public bool Reflux { get; set; }
+
         [Required]
+        [Range(0, 35, ErrorMessage = "Значение должно быть в диапазоне от 0 до 35")]
         [Display(Name = "Диаметр(мм)")]
         public float Value { get; set; }
     }
@@ -107,36 +99,25 @@ namespace TheBestWebInterface.Models
         [Required]
         [Display(Name = "Рефлюкс")]
         public bool Reflux { get; set; }
+
         [Required]
+        [Range(0, 35, ErrorMessage = "Значение должно быть в диапазоне от 0 до 35")]
         [Display(Name = "Преостьевой")]
         public float PredostSegment { get; set; }
+
         [Required]
+        [Range(0, 35, ErrorMessage = "Значение должно быть в диапазоне от 0 до 35")]
         [Display(Name = "Ср. треть бедра")]
         public float SredTretBedra { get; set; }
+
         [Required]
+        [Range(0, 35, ErrorMessage = "Значение должно быть в диапазоне от 0 до 35")]
         [Display(Name = "Уровень колена")]
         public float UrovenKolena { get; set; }
+
         [Required]
+        [Range(0, 35, ErrorMessage = "Значение должно быть в диапазоне от 0 до 35")]
         [Display(Name = "Верх. ср. треть голени")]
         public float VerhSredTretGoleni { get; set; }
     }
-
-    //public class OperationsViewModel
-    //{
-    //    [Description("ЭВЛК МПВ")]
-    //    public bool EvlkMpv { get; set; }
-    //    [Description("ЭВЛК БПВ")]
-    //    public bool EvlkBpv { get; set; }
-    //    [Description("РЧО")]
-    //    public bool Rho { get; set; }
-    //    [Description("ЛОКАЛЬНАЯ ФЛЕБЭКТОМИЯ")]
-    //    public bool LocalFleb { get; set; }
-    //    [Description("ФЛЕБЭКТОМИЯ")]
-    //    public bool Fleb { get; set; }
-    //    [Description("КРОССЭКТОМИЯ")]
-    //    public bool Cross { get; set; }
-    //    [Description("СКЛЕРОТЕРАПИЯ")]
-    //    public bool Scler { get; set; }
-    //    public bool IsNeedAnyOperation { get; set; }
-    //}
 }

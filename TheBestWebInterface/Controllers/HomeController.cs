@@ -1,59 +1,33 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TheBestWebInterface.Models;
-using Microsoft.Extensions.ML;
-using static TheBestWebInterface.MLModel;
-using Microsoft.ML;
+using TheBestWebInterface.Services;
 
 namespace TheBestWebInterface.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly PredictionEnginePool<ModelInput, ModelOutput> _test;
+        private readonly IPredictService _predictService;
 
-        public HomeController(ILogger<HomeController> logger, PredictionEnginePool<ModelInput, ModelOutput> test)
+        public HomeController(ILogger<HomeController> logger, IPredictService predictService)
         {
             _logger = logger;
-            _test = test;
+            _predictService = predictService;
         }
 
-        public async Task<IActionResult> Index(DataForModelViewModel data)
+        public IActionResult Index()
         {
-            if (data.Age == 0)
-            {
-                return View();
-            }
-
-            var z = new ModelInput();
-            var a = _test.Predict(z);
-
-
-            MLContext mlContext = new MLContext();
-
-            // Load Trained Model
-            DataViewSchema predictionPipelineSchema;
-            ITransformer predictionPipeline = mlContext.Model.Load("Ml/MLModel.mlnet", out predictionPipelineSchema);
-            // Create PredictionEngines
-            var predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(predictionPipeline);
-
-            data.Result += data.Result + "dwa";
-            return View(data);
+            return View();
         }
 
-        //public IActionResult GetOperations(DataForModelViewModel data)
-        //{
-        //    //ViewData["comment"] = "DWADWA";
-        //    return View();
-        //    //return new ActionResult().;
-        //}
-        //[HttpPost]
-        //public IActionResult GetOperations(DataForModelViewModel data)
-        //{
-        //    ViewData["Result"] = "Hello ";
-        //    //ViewData["NumTimes"] = numTimes;
-        //    return RedirectToAction(nameof(Index));
-        //}
+        public IActionResult GetResult(DataForModelViewModel data)
+        {
+            //var dto = data.ToDto();
+            var predicts = _predictService.GetPredicts(null);
+
+            return View("Index", data);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
