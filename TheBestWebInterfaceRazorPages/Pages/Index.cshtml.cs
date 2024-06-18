@@ -73,7 +73,8 @@ namespace TheBestWebInterfaceRazorPages.Pages
             return new PredictViewModel
             {
                 Name = predict.Name,
-                Probability = predict.Probability
+                Description = predict.Description,
+                Probability = predict.Probability + "%"
             };
         }
     }

@@ -5,27 +5,6 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<script>
-    // Проверяем, поддерживает ли браузер localStorage
-    if (typeof(Storage) !== "undefined") {
-        // При загрузке страницы восстанавливаем позицию скролла
-        window.addEventListener('load', function() {
-            var scrollPos = localStorage.getItem('scrollPos');
-            if (scrollPos !== null) {
-                window.scrollTo(0, scrollPos);
-                localStorage.removeItem('scrollPos');
-            }
-        });
-
-        // При отправке формы сохраняем позицию скролла
-        document.addEventListener('submit', function(event) {
-            var form = event.target.closest('form');
-            if (form) {
-                localStorage.setItem('scrollPos', window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop);
-            }
-        });
-    }
-</script>
 
 <div class="container">
     <form method="post">
@@ -211,23 +190,22 @@
             </div>
         </div>
         <div class="mt-4"></div>
-        <button type="submit" class="btn btn-primary">Получить рекомендацию</button>
+        <button type="submit" class="btn btn-primary">Получить рекомендации</button>
     </form>
     <div class="mt-4"></div>
 
     @if (Model.DataForModelViewModel.Result.Any())
     {
         <div class="form-group">
-            <h5 for="comment">Рекомендация</h5>
-            <table>
-                @foreach (var item in Model.DataForModelViewModel.Result)
-                {
-                    <tr>
-                        <td>@item.Name</td>
-                        <td>@item.Probability</td>
-                    </tr>
-                }
-            </table>
+            <h5 class="mb-3">Рекомендации</h5>
+            @foreach (var item in Model.DataForModelViewModel.Result)
+            {
+                <div class="col-md-6">
+                    <h6 class="mb-3">@item.Name</h6>
+                    @item.Description. Уверенность предсказания о необходимости операции: @item.Probability
+                </div>
+                <div class="mt-4"></div>
+            }
         </div>
     }
 </div>

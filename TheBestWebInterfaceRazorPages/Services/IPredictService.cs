@@ -16,21 +16,34 @@ namespace TheBestWebInterfaceRazorPages.Services
 
         public IEnumerable<PredictDto> GetPredicts(ModelInput data)
         {
-            var result = new List<PredictDto>();
-
-            result.Add(MapPredictDto(Predict(data, BpvModelName), "ЭВЛК БПВ"));
-            result.Add(MapPredictDto(Predict(data, MpvModelName), "ЭВЛК МПВ"));
-            result.Add(MapPredictDto(Predict(data, SclerModelName), "СКЛЕР"));
+            var result = new List<PredictDto>
+            {
+                MapPredictDto(Predict(data, BpvModelName), "ЭВЛК БПВ"),
+                MapPredictDto(Predict(data, MpvModelName), "ЭВЛК МПВ"),
+                MapPredictDto(Predict(data, SclerModelName), "Склеротерапия")
+            };
 
             return result;
         }
 
         private PredictDto MapPredictDto(ModelOutput modelOutput, string name)
         {
+            var probability = (float)Math.Round(modelOutput.Probability * 100, 2);
             return new PredictDto
             {
                 Name = name,
-                Probability = $"{(float)Math.Round(modelOutput.Probability * 100, 2)}%"
+                Description = GetDescription(probability),
+                Probability = probability
+            };
+        }
+
+        private string GetDescription(float probability)
+        {
+            return probability switch
+            {
+                >= 76 => "Требуется операция",
+                >= 41 => "Потенциально назначить операцию",
+                _ => "Операция не требуется"
             };
         }
 
