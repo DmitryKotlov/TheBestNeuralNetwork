@@ -1,4 +1,5 @@
-﻿using TheBestWebInterface.ML;
+﻿using Microsoft.ML;
+using TheBestWebInterface.ML;
 using TheBestWebInterface.Models;
 
 namespace TheBestWebInterface.Services
@@ -10,16 +11,33 @@ namespace TheBestWebInterface.Services
 
     public class PredictService : IPredictService
     {
+        private static string BpvModelName = "EVLK_BPV.mlnet";
+        private static string MpvModelName = "EVLK_MPV.mlnet";
+        private static string SclerModelName = "SCLER.mlnet";
+
         public IEnumerable<PredictDto> GetPredicts(DataForModelViewModel data)
         {
             var result = new List<PredictDto>();
             var modelInput = MapModelInput(data);
 
-            result.Add(MapPredictDto(EVLK_BPV.Predict(modelInput), "ЭВЛК БПВ"));
-            result.Add(MapPredictDto(ML.EVLK_MPV.Predict(modelInput), "ЭВЛК МПВ"));
-            result.Add(MapPredictDto(SCLER.Predict(modelInput), "СКЛЕР"));
+            result.Add(MapPredictDto(Predict(modelInput, BpvModelName), "ЭВЛК БПВ"));
+            result.Add(MapPredictDto(Predict(modelInput, MpvModelName), "ЭВЛК МПВ"));
+            result.Add(MapPredictDto(Predict(modelInput, SclerModelName), "СКЛЕР"));
 
             return result;
+        }
+
+        private static ModelOutput Predict(ModelInput input, string modelName)
+        {
+            var predEngine = CreatePredictEngine(modelName);
+            return predEngine.Predict(input);
+        }
+
+        private static PredictionEngine<ModelInput, ModelOutput> CreatePredictEngine(string modelName)
+        {
+            var mlContext = new MLContext();
+            ITransformer mlModel = mlContext.Model.Load(Path.GetFullPath($"ML/{modelName}"), out var _);
+            return mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
         }
 
         private ModelInput MapModelInput(DataForModelViewModel data)
@@ -27,7 +45,7 @@ namespace TheBestWebInterface.Services
             return new ModelInput
             {
                 Gender = (int)data.Gender,
-                Age = data.Age / 10,
+                Age = (int)(data.Age / 10),
                 Varikoz = data.Complaints.Varikoz,
                 Uplotnenie = data.Complaints.Uplotnenie,
                 Potemnenie = data.Complaints.Potemnenie,
