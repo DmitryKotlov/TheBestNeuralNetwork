@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
 using TheBestWebInterface.Models;
 using TheBestWebInterface.Services;
 
@@ -25,9 +25,9 @@ namespace TheBestWebInterface.Controllers
         {
             //var dto = data.ToDto();
 
-            var predicts = _predictService.GetPredicts(null, data.Age);
+            var predicts = _predictService.GetPredicts(data);
             ViewData["Result"] = predicts;
-            return View("Index", data);
+            return View("Index", new DataForModelViewModel());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

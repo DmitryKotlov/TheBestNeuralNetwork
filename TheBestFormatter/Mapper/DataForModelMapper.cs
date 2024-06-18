@@ -130,15 +130,9 @@ namespace TheBestFormatter.Mapper
 
         private static bool? MapBoolProperty(bool yes, bool no)
         {
-            if (yes)
-            {
-                return true;
-            }
+            if (yes) return true;
 
-            if (no)
-            {
-                return false;
-            }
+            if (no) return false;
 
             return null;
         }

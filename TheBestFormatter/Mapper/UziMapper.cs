@@ -14,13 +14,9 @@ namespace TheBestFormatter.Mapper
             foreach (var subString in strings)
             {
                 if (withAdditionalData)
-                {
                     FillExtendedDiameter(data, subString);
-                }
                 else
-                {
                     FillDiameter(data, subString);
-                }
 
                 FillReflux(data, subString);
             }
@@ -41,26 +37,18 @@ namespace TheBestFormatter.Mapper
 
         private static void FillExtendedDiameter(UziData data, string subString)
         {
-            if (data.Diameter is not null || !subString.Contains("ДИАМЕТР"))
-            {
-                return;
-            }
+            if (data.Diameter is not null || !subString.Contains("ДИАМЕТР")) return;
 
             var diameterIndex = subString.IndexOf("ДИАМЕТР");
             var diameterSubstring = Regex.Replace(subString.Substring(diameterIndex), "[^0-9,-]", "");
             var diameterSplit = diameterSubstring.Split("-").Where(d => d.Any(char.IsDigit)).ToArray();
 
-            if (diameterSplit.Length != 4)
-            {
-                throw new Exception("Diameter not found");
-            }
+            if (diameterSplit.Length != 4) throw new Exception("Diameter not found");
 
             var extendedDiameter = new ExtendedDiameter();
 
             for (var i = 0; i < diameterSplit.Length; i++)
-            {
                 if (float.TryParse(diameterSplit[i], out var value))
-                {
                     switch (i)
                     {
                         case 0:
@@ -76,54 +64,35 @@ namespace TheBestFormatter.Mapper
                             extendedDiameter.VerhSredTretGoleni = value;
                             break;
                     }
-                }
                 else
-                {
                     throw new Exception("Diameter not found");
-                }
-            }
 
             data.Diameter = extendedDiameter;
         }
 
         private static void FillDiameter(UziData data, string subString)
         {
-            if (data.Diameter is not null || !subString.Contains("ДИАМЕТР"))
-            {
-                return;
-            }
+            if (data.Diameter is not null || !subString.Contains("ДИАМЕТР")) return;
 
             var index = subString.IndexOf("ДИАМЕТР");
             var strNumber = Regex.Replace(subString.Substring(index), "[^0-9,-]", "");
 
             if (float.TryParse(strNumber, out var value))
-            {
                 data.Diameter = new Diameter
                 {
                     Value = value
                 };
-            }
             else
-            {
                 throw new Exception("Diameter not found");
-            }
         }
 
         private static void FillReflux(UziData data, string subString)
         {
-            if (!subString.Contains("РЕФЛЮКС"))
-            {
-                return;
-            }
+            if (!subString.Contains("РЕФЛЮКС")) return;
 
             if (subString.Contains('+'))
-            {
                 data.Reflux = true;
-            }
-            else if (subString.Contains('-'))
-            {
-                data.Reflux = false;
-            }
+            else if (subString.Contains('-')) data.Reflux = false;
         }
     }
 }

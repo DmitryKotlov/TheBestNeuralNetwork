@@ -77,18 +77,25 @@ namespace TheBestDomain
     {
         [Description("ЭВЛК МПВ")]
         public bool EvlkMpv { get; set; }
+
         [Description("ЭВЛК БПВ")]
         public bool EvlkBpv { get; set; }
+
         [Description("РЧО")]
         public bool Rho { get; set; }
+
         [Description("ЛОКАЛЬНАЯ ФЛЕБЭКТОМИЯ")]
         public bool LocalFleb { get; set; }
+
         [Description("ФЛЕБЭКТОМИЯ")]
         public bool Fleb { get; set; }
+
         [Description("КРОССЭКТОМИЯ")]
         public bool Cross { get; set; }
+
         [Description("СКЛЕРОТЕРАПИЯ")]
         public bool Scler { get; set; }
+
         public bool IsNeedAnyOperation { get; set; }
     }
 }

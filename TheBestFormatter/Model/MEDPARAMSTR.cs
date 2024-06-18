@@ -5,7 +5,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDPARAMSTR")]
     public class MEDPARAMSTR
     {
-
         [XmlElement(ElementName = "paramStr")]
         public PARAM_STR ParamStr { get; set; }
     }
@@ -110,20 +109,28 @@ namespace TheBestFormatter.Model
 
         [XmlElement(ElementName = "MEDMEMO3")]
         public MEDMEMO3 Medmemo3 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO4")]
         public MEDMEMO3 Medmemo4 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO5")]
         public MEDMEMO3 Medmemo5 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO6")]
         public MEDMEMO3 Medmemo6 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO7")]
         public MEDMEMO3 Medmemo7 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO8")]
         public MEDMEMO3 Medmemo8 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO9")]
         public MEDMEMO3 Medmemo9 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO13")]
         public MEDMEMO3 Medmemo13 { get; set; }
+
         [XmlElement(ElementName = "MEDMEMO14")]
         public MEDMEMO3 Medmemo14 { get; set; }
 
@@ -869,7 +876,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL1")]
     public class MEDLABEL1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -877,7 +883,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX1")]
     public class MEDCOMBOBOX1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -885,7 +890,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL2")]
     public class MEDLABEL2
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -893,7 +897,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDDATEEDIT1")]
     public class MEDDATEEDIT1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -901,7 +904,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO1")]
     public class MEDMEMO1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -909,7 +911,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL4")]
     public class MEDLABEL4
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -917,7 +918,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO2")]
     public class MEDMEMO2
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -925,7 +925,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO3")]
     public class MEDMEMO3
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -933,7 +932,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO4")]
     public class MEDMEMO4
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -941,7 +939,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO5")]
     public class MEDMEMO5
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -949,7 +946,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO6")]
     public class MEDMEMO6
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -957,7 +953,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO7")]
     public class MEDMEMO7
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -965,7 +960,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO8")]
     public class MEDMEMO8
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -973,7 +967,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO9")]
     public class MEDMEMO9
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -981,7 +974,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO13")]
     public class MEDMEMO13
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -989,7 +981,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO14")]
     public class MEDMEMO14
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -997,7 +988,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX1")]
     public class MEDCHECKBOX1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1005,7 +995,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX2")]
     public class MEDCHECKBOX2
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1013,7 +1002,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX3")]
     public class MEDCHECKBOX3
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1021,7 +1009,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX4")]
     public class MEDCHECKBOX4
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1029,7 +1016,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL11")]
     public class MEDLABEL11
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1037,7 +1023,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL12")]
     public class MEDLABEL12
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1045,7 +1030,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL15")]
     public class MEDLABEL15
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1053,7 +1037,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX6")]
     public class MEDCOMBOBOX6
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1061,7 +1044,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL19")]
     public class MEDLABEL19
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1069,7 +1051,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL20")]
     public class MEDLABEL20
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1077,7 +1058,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX6")]
     public class MEDCHECKBOX6
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1085,7 +1065,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX7")]
     public class MEDCHECKBOX7
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1093,7 +1072,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX8")]
     public class MEDCHECKBOX8
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1101,7 +1079,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX9")]
     public class MEDCHECKBOX9
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1109,7 +1086,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX10")]
     public class MEDCHECKBOX10
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1117,7 +1093,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX11")]
     public class MEDCHECKBOX11
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1125,7 +1100,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX12")]
     public class MEDCHECKBOX12
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1133,7 +1107,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL25")]
     public class MEDLABEL25
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1141,7 +1114,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL26")]
     public class MEDLABEL26
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1149,7 +1121,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX13")]
     public class MEDCHECKBOX13
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1157,7 +1128,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX14")]
     public class MEDCHECKBOX14
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1165,7 +1135,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX15")]
     public class MEDCHECKBOX15
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1173,7 +1142,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX16")]
     public class MEDCHECKBOX16
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1181,7 +1149,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX17")]
     public class MEDCHECKBOX17
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1189,7 +1156,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX18")]
     public class MEDCHECKBOX18
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1197,7 +1163,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX19")]
     public class MEDCHECKBOX19
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1205,7 +1170,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX20")]
     public class MEDCHECKBOX20
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1213,7 +1177,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX21")]
     public class MEDCHECKBOX21
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1221,7 +1184,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX22")]
     public class MEDCHECKBOX22
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1229,7 +1191,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX23")]
     public class MEDCHECKBOX23
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1237,7 +1198,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX27")]
     public class MEDCHECKBOX27
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1245,7 +1205,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX28")]
     public class MEDCHECKBOX28
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1253,7 +1212,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL32")]
     public class MEDLABEL32
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1261,7 +1219,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL35")]
     public class MEDLABEL35
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1269,7 +1226,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO21")]
     public class MEDMEMO21
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1277,7 +1233,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL72")]
     public class MEDLABEL72
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1285,7 +1240,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL73")]
     public class MEDLABEL73
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1293,7 +1247,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL74")]
     public class MEDLABEL74
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1301,7 +1254,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX25")]
     public class MEDCOMBOBOX25
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1309,7 +1261,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL75")]
     public class MEDLABEL75
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1317,7 +1268,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL76")]
     public class MEDLABEL76
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1325,7 +1275,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL77")]
     public class MEDLABEL77
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1333,7 +1282,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX26")]
     public class MEDCOMBOBOX26
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1341,7 +1289,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL78")]
     public class MEDLABEL78
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1349,7 +1296,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX27")]
     public class MEDCOMBOBOX27
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1357,7 +1303,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL79")]
     public class MEDLABEL79
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1365,7 +1310,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL85")]
     public class MEDLABEL85
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1373,7 +1317,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX30")]
     public class MEDCOMBOBOX30
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1381,7 +1324,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL86")]
     public class MEDLABEL86
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1389,7 +1331,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX31")]
     public class MEDCOMBOBOX31
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1397,7 +1338,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL90")]
     public class MEDLABEL90
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1405,7 +1345,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX34")]
     public class MEDCOMBOBOX34
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1413,7 +1352,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL91")]
     public class MEDLABEL91
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1421,7 +1359,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX35")]
     public class MEDCOMBOBOX35
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1429,7 +1366,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL92")]
     public class MEDLABEL92
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1437,7 +1373,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX36")]
     public class MEDCOMBOBOX36
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1445,7 +1380,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL93")]
     public class MEDLABEL93
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1453,7 +1387,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT1")]
     public class MEDSPINEDIT1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1461,7 +1394,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL94")]
     public class MEDLABEL94
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1469,7 +1401,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT3")]
     public class MEDSPINEDIT3
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1477,7 +1408,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL95")]
     public class MEDLABEL95
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1485,7 +1415,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT4")]
     public class MEDSPINEDIT4
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1493,7 +1422,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL99")]
     public class MEDLABEL99
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1501,7 +1429,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX37")]
     public class MEDCOMBOBOX37
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1509,7 +1436,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX38")]
     public class MEDCOMBOBOX38
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1517,7 +1443,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL100")]
     public class MEDLABEL100
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1525,7 +1450,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX42")]
     public class MEDCOMBOBOX42
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1533,7 +1457,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL108")]
     public class MEDLABEL108
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1541,7 +1464,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL109")]
     public class MEDLABEL109
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1549,7 +1471,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT5")]
     public class MEDSPINEDIT5
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1557,7 +1478,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL119")]
     public class MEDLABEL119
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1565,7 +1485,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO48")]
     public class MEDMEMO48
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1573,7 +1492,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL120")]
     public class MEDLABEL120
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1581,7 +1499,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL122")]
     public class MEDLABEL122
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1589,7 +1506,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX52")]
     public class MEDCOMBOBOX52
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1597,7 +1513,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX53")]
     public class MEDCOMBOBOX53
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1605,7 +1520,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL124")]
     public class MEDLABEL124
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1613,7 +1527,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX55")]
     public class MEDCOMBOBOX55
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1621,7 +1534,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL127")]
     public class MEDLABEL127
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1629,7 +1541,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX57")]
     public class MEDCOMBOBOX57
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1637,7 +1548,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL129")]
     public class MEDLABEL129
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1645,7 +1555,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL130")]
     public class MEDLABEL130
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1653,7 +1562,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT7")]
     public class MEDSPINEDIT7
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1661,7 +1569,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL131")]
     public class MEDLABEL131
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1669,7 +1576,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL132")]
     public class MEDLABEL132
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1677,7 +1583,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT8")]
     public class MEDSPINEDIT8
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1685,7 +1590,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL133")]
     public class MEDLABEL133
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1693,7 +1597,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL134")]
     public class MEDLABEL134
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1701,7 +1604,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL135")]
     public class MEDLABEL135
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1709,7 +1611,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL136")]
     public class MEDLABEL136
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1717,7 +1618,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT9")]
     public class MEDSPINEDIT9
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1725,7 +1625,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT10")]
     public class MEDSPINEDIT10
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1733,7 +1632,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL137")]
     public class MEDLABEL137
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1741,7 +1639,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL138")]
     public class MEDLABEL138
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1749,7 +1646,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL139")]
     public class MEDLABEL139
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1757,7 +1653,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL140")]
     public class MEDLABEL140
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1765,7 +1660,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT11")]
     public class MEDSPINEDIT11
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1773,7 +1667,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT12")]
     public class MEDSPINEDIT12
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1781,7 +1674,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL141")]
     public class MEDLABEL141
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1789,7 +1681,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX59")]
     public class MEDCOMBOBOX59
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1797,7 +1688,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL159")]
     public class MEDLABEL159
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1805,7 +1695,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX34")]
     public class MEDCHECKBOX34
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1813,7 +1702,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX35")]
     public class MEDCHECKBOX35
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1821,7 +1709,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL165")]
     public class MEDLABEL165
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1829,7 +1716,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX38")]
     public class MEDCHECKBOX38
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1837,7 +1723,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX39")]
     public class MEDCHECKBOX39
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1845,7 +1730,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL167")]
     public class MEDLABEL167
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1853,7 +1737,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX40")]
     public class MEDCHECKBOX40
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1861,7 +1744,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX41")]
     public class MEDCHECKBOX41
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1869,7 +1751,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL178")]
     public class MEDLABEL178
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1877,7 +1758,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL179")]
     public class MEDLABEL179
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1885,7 +1765,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL180")]
     public class MEDLABEL180
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1893,7 +1772,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL183")]
     public class MEDLABEL183
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1901,7 +1779,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL184")]
     public class MEDLABEL184
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1909,7 +1786,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX66")]
     public class MEDCOMBOBOX66
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1917,7 +1793,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL185")]
     public class MEDLABEL185
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1925,7 +1800,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX67")]
     public class MEDCOMBOBOX67
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1933,7 +1807,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL186")]
     public class MEDLABEL186
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1941,7 +1814,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX68")]
     public class MEDCOMBOBOX68
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1949,7 +1821,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL187")]
     public class MEDLABEL187
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1957,7 +1828,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL188")]
     public class MEDLABEL188
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1965,7 +1835,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL189")]
     public class MEDLABEL189
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1973,7 +1842,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX69")]
     public class MEDCOMBOBOX69
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1981,7 +1849,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX70")]
     public class MEDCOMBOBOX70
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1989,7 +1856,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX71")]
     public class MEDCOMBOBOX71
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -1997,7 +1863,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL190")]
     public class MEDLABEL190
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2005,7 +1870,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO63")]
     public class MEDMEMO63
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2013,7 +1877,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX92")]
     public class MEDCOMBOBOX92
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2021,7 +1884,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL258")]
     public class MEDLABEL258
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2029,7 +1891,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT31")]
     public class MEDSPINEDIT31
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2037,7 +1898,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL259")]
     public class MEDLABEL259
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2045,7 +1905,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL261")]
     public class MEDLABEL261
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2053,7 +1912,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL262")]
     public class MEDLABEL262
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2061,7 +1919,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT32")]
     public class MEDSPINEDIT32
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2069,7 +1926,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX74")]
     public class MEDCHECKBOX74
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2077,7 +1933,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX75")]
     public class MEDCHECKBOX75
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2085,7 +1940,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX78")]
     public class MEDCHECKBOX78
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2093,7 +1947,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX79")]
     public class MEDCHECKBOX79
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2101,7 +1954,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX81")]
     public class MEDCHECKBOX81
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2109,7 +1961,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX76")]
     public class MEDCHECKBOX76
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2117,7 +1968,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX77")]
     public class MEDCHECKBOX77
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2125,7 +1975,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX80")]
     public class MEDCHECKBOX80
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2133,7 +1982,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX82")]
     public class MEDCHECKBOX82
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2141,7 +1989,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX83")]
     public class MEDCHECKBOX83
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2149,7 +1996,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX84")]
     public class MEDCHECKBOX84
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2157,7 +2003,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX85")]
     public class MEDCHECKBOX85
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2165,7 +2010,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX86")]
     public class MEDCHECKBOX86
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2173,7 +2017,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX87")]
     public class MEDCHECKBOX87
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2181,7 +2024,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX88")]
     public class MEDCHECKBOX88
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2189,7 +2031,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX89")]
     public class MEDCHECKBOX89
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2197,7 +2038,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO25")]
     public class MEDMEMO25
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2205,7 +2045,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDMEMO27")]
     public class MEDMEMO27
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2213,7 +2052,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL145")]
     public class MEDLABEL145
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2221,7 +2059,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL147")]
     public class MEDLABEL147
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2229,7 +2066,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL148")]
     public class MEDLABEL148
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2237,7 +2073,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX47")]
     public class MEDCHECKBOX47
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2245,7 +2080,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX48")]
     public class MEDCHECKBOX48
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2253,7 +2087,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX49")]
     public class MEDCHECKBOX49
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2261,7 +2094,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX50")]
     public class MEDCHECKBOX50
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2269,7 +2101,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX51")]
     public class MEDCHECKBOX51
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2277,7 +2108,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL80")]
     public class MEDLABEL80
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2285,7 +2115,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL81")]
     public class MEDLABEL81
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2293,7 +2122,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL82")]
     public class MEDLABEL82
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2301,7 +2129,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL83")]
     public class MEDLABEL83
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2309,7 +2136,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL84")]
     public class MEDLABEL84
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2317,7 +2143,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL87")]
     public class MEDLABEL87
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2325,7 +2150,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL88")]
     public class MEDLABEL88
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2333,7 +2157,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL89")]
     public class MEDLABEL89
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2341,7 +2164,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL96")]
     public class MEDLABEL96
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2349,7 +2171,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL97")]
     public class MEDLABEL97
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2357,7 +2178,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL98")]
     public class MEDLABEL98
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2365,7 +2185,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL101")]
     public class MEDLABEL101
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2373,7 +2192,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL102")]
     public class MEDLABEL102
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2381,7 +2199,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL103")]
     public class MEDLABEL103
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2389,7 +2206,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL104")]
     public class MEDLABEL104
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2397,7 +2213,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT14")]
     public class MEDSPINEDIT14
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2405,7 +2220,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT15")]
     public class MEDSPINEDIT15
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2413,7 +2227,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT16")]
     public class MEDSPINEDIT16
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2421,7 +2234,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT17")]
     public class MEDSPINEDIT17
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2429,7 +2241,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT18")]
     public class MEDSPINEDIT18
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2437,7 +2248,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDSPINEDIT19")]
     public class MEDSPINEDIT19
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2445,7 +2255,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX28")]
     public class MEDCOMBOBOX28
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2453,7 +2262,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX53")]
     public class MEDCHECKBOX53
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2461,7 +2269,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX54")]
     public class MEDCHECKBOX54
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2469,7 +2276,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX55")]
     public class MEDCHECKBOX55
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2477,7 +2283,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDDBMKB10EDIT1")]
     public class MEDDBMKB10_EDIT1
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2485,7 +2290,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX56")]
     public class MEDCHECKBOX56
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2493,7 +2297,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDDBMKB10EDIT3")]
     public class MEDDBMKB10_EDIT3
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2501,7 +2304,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX57")]
     public class MEDCHECKBOX57
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2509,7 +2311,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDDBMKB10EDIT4")]
     public class MEDDBMKB10_EDIT4
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2517,7 +2318,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX58")]
     public class MEDCHECKBOX58
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2525,7 +2325,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDDBMKB10EDIT5")]
     public class MEDDBMKB10_EDIT5
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2533,7 +2332,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL105")]
     public class MEDLABEL105
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2541,7 +2339,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL106")]
     public class MEDLABEL106
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2549,7 +2346,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL107")]
     public class MEDLABEL107
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2557,7 +2353,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL110")]
     public class MEDLABEL110
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2565,7 +2360,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX59")]
     public class MEDCHECKBOX59
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2573,7 +2367,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX60")]
     public class MEDCHECKBOX60
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2581,7 +2374,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX29")]
     public class MEDCOMBOBOX29
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2589,7 +2381,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX32")]
     public class MEDCOMBOBOX32
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2597,7 +2388,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX33")]
     public class MEDCOMBOBOX33
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2605,7 +2395,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX61")]
     public class MEDCHECKBOX61
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2613,7 +2402,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCHECKBOX62")]
     public class MEDCHECKBOX62
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2621,7 +2409,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDCOMBOBOX39")]
     public class MEDCOMBOBOX39
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2629,7 +2416,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "PERV")]
     public class PERV
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2637,7 +2423,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL111")]
     public class MEDLABEL111
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2645,7 +2430,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "POVT")]
     public class POVT
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2653,7 +2437,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "VARIKOZ")]
     public class VARIKOZ
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2661,7 +2444,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NESOSUD")]
     public class NESOSUD
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2669,7 +2451,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "OSNOVNOE")]
     public class OSNOVNOE
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2677,7 +2458,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTST")]
     public class SOPUTST
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2685,7 +2465,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "OPERACIYA")]
     public class OPERACIYA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2693,7 +2472,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MANIPULYACIYA")]
     public class MANIPULYACIYA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2701,7 +2479,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "LECHENIE")]
     public class LECHENIE
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2709,7 +2486,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "ZAPISALSYA")]
     public class ZAPISALSYA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2717,7 +2493,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NEZAPISALSYA")]
     public class NEZAPISALSYA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2725,7 +2500,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "OTLOZHIL")]
     public class OTLOZHIL
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2733,7 +2507,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "OTOLOZHILDO")]
     public class OTOLOZHILDO
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2741,7 +2514,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTNEVROPATOLOG")]
     public class SOPUTNEVROPATOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2749,7 +2521,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTTRAVMOTOLOG")]
     public class SOPUTTRAVMOTOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2757,7 +2528,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTREVMATOLOG")]
     public class SOPUTREVMATOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2765,7 +2535,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTGEMOSTAZIOLOG")]
     public class SOPUTGEMOSTAZIOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2773,7 +2542,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTTERAPEVT")]
     public class SOPUTTERAPEVT
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2781,7 +2549,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTKARDIOLOG")]
     public class SOPUTKARDIOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2789,7 +2556,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTENDOKRINOLOG")]
     public class SOPUTENDOKRINOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2797,7 +2563,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTGINEKOLOG")]
     public class SOPUTGINEKOLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2805,7 +2570,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTUROLOG")]
     public class SOPUTUROLOG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2813,7 +2577,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTHIRURG")]
     public class SOPUTHIRURG
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2821,7 +2584,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTDRUGOI")]
     public class SOPUTDRUGOI
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2829,7 +2591,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "SOPUTNETREBUETSYA")]
     public class SOPUTNETREBUETSYA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2837,7 +2598,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NZSAMOZAP")]
     public class NZSAMOZAP
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2845,7 +2605,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NZDOROGO")]
     public class NZDOROGO
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2853,7 +2612,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NZBOITSYA")]
     public class NZBOITSYA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2861,7 +2619,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NZZANYAT")]
     public class NZZANYAT
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2869,7 +2626,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NZNENASTROEN")]
     public class NZNENASTROEN
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2877,7 +2633,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NZOZHIDALDRUGOI")]
     public class NZOZHIDALDRUGOI
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2885,7 +2640,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NSNETTEHNOLOGII")]
     public class NSNETTEHNOLOGII
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2893,7 +2647,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "CENTR")]
     public class CENTR
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2901,7 +2654,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL112")]
     public class MEDLABEL112
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2909,7 +2661,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "MEDLABEL113")]
     public class MEDLABEL113
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2917,7 +2668,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NUZHNASPRAVKA")]
     public class NUZHNASPRAVKA
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2925,7 +2675,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "TRIKOTAZH1KL")]
     public class TRIKOTAZH1_KL
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2933,7 +2682,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "TRIKOTAZH")]
     public class TRIKOTAZH
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2941,7 +2689,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "TDLK")]
     public class TDLK
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2949,7 +2696,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "ZAPISALSYATDLK")]
     public class ZAPISALSYATDLK
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
@@ -2957,7 +2703,6 @@ namespace TheBestFormatter.Model
     [XmlRoot(ElementName = "NEZAPISALSYATDLK")]
     public class NEZAPISALSYATDLK
     {
-
         [XmlElement(ElementName = "MEDPARAMSTR")]
         public MEDPARAMSTR Medparamstr { get; set; }
     }
