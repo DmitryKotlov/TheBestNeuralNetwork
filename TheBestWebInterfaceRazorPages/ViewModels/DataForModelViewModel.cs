@@ -1,12 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using TheBestWebInterface.Services;
 
-namespace TheBestWebInterface.Models
+namespace TheBestWebInterfaceRazorPages.ViewModels
 {
     public class DataForModelViewModel
     {
-        [Required(ErrorMessage = "Поле обязательно для заполнения")]
-        [Range(0, 150, ErrorMessage = "Значение должно быть в диапазоне от 0 до 150")]
+        //[Required(ErrorMessage = "Поле обязательно для заполнения")]
+        //[Range(0, 150, ErrorMessage = "Значение должно быть в диапазоне от 0 до 150")]
         [Display(Name = "Возраст")]
         public int Age { get; set; }
 
@@ -16,9 +15,7 @@ namespace TheBestWebInterface.Models
         public ComplaintsViewModel Complaints { get; set; }
         public LocalizationsViewModel Localizations { get; set; }
         public UziViewModel Uzi { get; set; }
-
-        public int? Result2 { get; set; }
-        public PredictDto[]? Result { get; set; }
+        public ICollection<PredictViewModel> Result { get; set; } = new List<PredictViewModel>();
     }
 
     public enum Gender

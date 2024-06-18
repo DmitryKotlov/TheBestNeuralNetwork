@@ -1,30 +1,35 @@
-﻿using Microsoft.ML;
-using TheBestWebInterface.ML;
-using TheBestWebInterface.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using TheBestWebInterfaceRazorPages.ML;
+using TheBestWebInterfaceRazorPages.Services;
+using TheBestWebInterfaceRazorPages.ViewModels;
 
-namespace TheBestWebInterface.Services
+namespace TheBestWebInterfaceRazorPages.Pages
 {
-    public interface IPredictService
+    public class IndexModel : PageModel
     {
-        public IEnumerable<PredictDto> GetPredicts(DataForModelViewModel data); //TODO Dto
-    }
+        private readonly ILogger<IndexModel> _logger;
+        private readonly IPredictService _predictService;
 
-    public class PredictService : IPredictService
-    {
-        private const string BpvModelName = "EVLK_BPV.mlnet";
-        private const string MpvModelName = "EVLK_MPV.mlnet";
-        private const string SclerModelName = "SCLER.mlnet";
-
-        public IEnumerable<PredictDto> GetPredicts(DataForModelViewModel data)
+        public IndexModel(ILogger<IndexModel> logger, IPredictService predictService)
         {
-            var result = new List<PredictDto>();
-            var modelInput = MapModelInput(data);
+            _logger = logger;
+            _predictService = predictService;
+        }
 
-            result.Add(MapPredictDto(Predict(modelInput, BpvModelName), "ЭВЛК БПВ"));
-            result.Add(MapPredictDto(Predict(modelInput, MpvModelName), "ЭВЛК МПВ"));
-            result.Add(MapPredictDto(Predict(modelInput, SclerModelName), "СКЛЕР"));
+        [BindProperty]
+        public DataForModelViewModel DataForModelViewModel { get; set; }
 
-            return result;
+        public void OnGet()
+        {
+            DataForModelViewModel = new DataForModelViewModel();
+        }
+
+        public void OnPost()
+        {
+            if (!ModelState.IsValid) return;
+            var predicts = _predictService.GetPredicts(MapModelInput(DataForModelViewModel));
+            DataForModelViewModel.Result = predicts.Select(MapPredictViewModel).ToArray();
         }
 
         private ModelInput MapModelInput(DataForModelViewModel data)
@@ -63,26 +68,13 @@ namespace TheBestWebInterface.Services
             };
         }
 
-        private PredictDto MapPredictDto(ModelOutput modelOutput, string name)
+        private PredictViewModel MapPredictViewModel(PredictDto predict)
         {
-            return new PredictDto
+            return new PredictViewModel
             {
-                Name = name,
-                Probability = $"{(float)Math.Round(modelOutput.Probability * 100, 2)}%"
+                Name = predict.Name,
+                Probability = predict.Probability
             };
-        }
-
-        private static ModelOutput Predict(ModelInput input, string modelName)
-        {
-            var predEngine = CreatePredictEngine(modelName);
-            return predEngine.Predict(input);
-        }
-
-        private static PredictionEngine<ModelInput, ModelOutput> CreatePredictEngine(string modelName)
-        {
-            var mlContext = new MLContext();
-            var mlModel = mlContext.Model.Load(Path.GetFullPath($"ML/{modelName}"), out var _);
-            return mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
         }
     }
 }

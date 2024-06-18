@@ -10,4 +10,19 @@
     <PackageReference Include="Microsoft.ML.FastTree" Version="3.0.1" />
     <PackageReference Include="Microsoft.ML.LightGbm" Version="2.0.0" />
   </ItemGroup>
+  <!--<ItemGroup Label="EVLK_MPV">
+    <None Include="EVLK_MPV.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+	<ItemGroup Label="EVLK_BPV">
+		<None Include="EVLK_BPV.mlnet">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+  <ItemGroup Label="SCLER">
+    <None Include="SCLER.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>-->
 </Project>

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestFormatter", "TheBest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestDomain", "TheBestDomain\TheBestDomain.csproj", "{E1C96763-861C-4AD8-817E-BE894891A6F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestWebInterface", "TheBestWebInterface\TheBestWebInterface.csproj", "{AFBCDB6D-F1B9-4219-ACA3-70562846F41D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBestWebInterfaceRazorPages", "TheBestWebInterfaceRazorPages\TheBestWebInterfaceRazorPages.csproj", "{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{E1C96763-861C-4AD8-817E-BE894891A6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C96763-861C-4AD8-817E-BE894891A6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1C96763-861C-4AD8-817E-BE894891A6F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AFBCDB6D-F1B9-4219-ACA3-70562846F41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AFBCDB6D-F1B9-4219-ACA3-70562846F41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AFBCDB6D-F1B9-4219-ACA3-70562846F41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AFBCDB6D-F1B9-4219-ACA3-70562846F41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

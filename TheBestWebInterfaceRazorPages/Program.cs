@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Localization;
 using System.Globalization;
-using TheBestWebInterface.Services;
+using Microsoft.AspNetCore.Localization;
+using TheBestWebInterfaceRazorPages.Services;
 
-namespace TheBestWebInterface
+namespace TheBestWebInterfaceRazorPages
 {
     public class Program
     {
@@ -11,10 +11,8 @@ namespace TheBestWebInterface
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            // builder.Services.AddRazorPages();
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddRazorPages();
             builder.Services.AddScoped<IPredictService, PredictService>();
-
             builder.Services.Configure<RequestLocalizationOptions>(options =>
             {
                 var supportedCultures = new List<CultureInfo>
@@ -31,18 +29,21 @@ namespace TheBestWebInterface
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment()) app.UseExceptionHandler("/Home/Error");
-            app.UseStaticFiles();
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
 
-            //app.Swagg
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.MapControllerRoute(
-                "default",
-                "{controller=Home}/{action=Index}/{id?}");
+            app.MapRazorPages();
 
             app.Run();
         }

@@ -16,18 +16,31 @@ namespace TheBestWebInterface.Controllers
             _predictService = predictService;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View(new DataForModelViewModel());
         }
 
-        public IActionResult GetResult(DataForModelViewModel data)
-        {
-            //var dto = data.ToDto();
+        // public IActionResult GetResult(DataForModelViewModel data)
+        // {
+        //     //var dto = data.ToDto();
+        //
+        //     var predicts = _predictService.GetPredicts(data);
+        //     ViewData["Result"] = predicts;
+        //     return View("Index");
+        // }
 
-            var predicts = _predictService.GetPredicts(data);
-            ViewData["Result"] = predicts;
-            return View("Index", new DataForModelViewModel());
+        [HttpPost]
+        public IActionResult Index(DataForModelViewModel data)
+        {
+            if (ModelState.IsValid)
+            {
+                data.Result2 = 1;
+                data.Result = _predictService.GetPredicts(data).ToArray();
+            }
+
+            return View(data);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

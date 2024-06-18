@@ -1,0 +1,1162 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Projects\\TheBestNeuralNetwork\\TheBestFormatter\\bin\\Debug\\net8.0\\Resource\\Result.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Gender",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Age",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Varikoz",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Uplotnenie",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Potemnenie",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "ZazhivshayaYazva",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "OtkritayaYazva",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "OtekiEst",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "GlubokieVeniProhodimi",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Tromboflebit",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Boleznennost",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "IsAny",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Bedro",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Golen",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Stopa",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "IsAny2",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Bedro2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Golen2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Stopa2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "NesostVeni",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Reflux",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Diameter",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Reflux2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "PredostSegment",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "SredTretBedra",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "UrovenKolena",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "VerhSredTretGoleni",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Reflux3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Diameter2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Reflux4",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Diameter3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "EvlkMpv",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "EvlkBpv",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Rho",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "LocalFleb",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Fleb",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Cross",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Scler",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "IsNeedAnyOperation",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 0.87770193401592722,
+        "RuntimeInSeconds": 0.396,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ],
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "InputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3",
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 3227,
+            "MinimumExampleCountPerLeaf": 6,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 17,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.37045106473317135,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "LabelColumnName": "EvlkBpv",
+            "ScoreColumnName": "Score"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestBinary",
+        "Score": 0.87656427758816835,
+        "RuntimeInSeconds": 4.394,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e8",
+          "e0": {
+            "OutputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ],
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "InputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3",
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "NumberOfTrees": 587,
+            "NumberOfLeaves": 129,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "LabelColumnName": "EvlkBpv",
+            "ScoreColumnName": "Score"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestBinary",
+        "Score": 0.875995449374289,
+        "RuntimeInSeconds": 1.058,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e8",
+          "e0": {
+            "OutputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ],
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "InputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3",
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "NumberOfTrees": 21,
+            "NumberOfLeaves": 17178,
+            "FeatureFraction": 0.806136,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "LabelColumnName": "EvlkBpv",
+            "ScoreColumnName": "Score"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestBinary",
+        "Score": 0.87542662116040959,
+        "RuntimeInSeconds": 0.244,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e7 * e8",
+          "e0": {
+            "OutputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ],
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "InputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3",
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 172,
+            "FeatureFraction": 0.8917091,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "LabelColumnName": "EvlkBpv",
+            "ScoreColumnName": "Score"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 0.87542662116040959,
+        "RuntimeInSeconds": 0.185,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ],
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "InputColumnNames": [
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Gender",
+              "Age",
+              "Diameter",
+              "PredostSegment",
+              "SredTretBedra",
+              "UrovenKolena",
+              "VerhSredTretGoleni",
+              "Diameter2",
+              "Diameter3",
+              "Varikoz",
+              "Uplotnenie",
+              "Potemnenie",
+              "ZazhivshayaYazva",
+              "OtkritayaYazva",
+              "OtekiEst",
+              "GlubokieVeniProhodimi",
+              "Tromboflebit",
+              "Boleznennost",
+              "Bedro",
+              "Golen",
+              "Stopa",
+              "Bedro2",
+              "Golen2",
+              "Stopa2",
+              "NesostVeni",
+              "Reflux",
+              "Reflux2",
+              "Reflux3",
+              "Reflux4"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 40,
+            "MinimumExampleCountPerLeaf": 13,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 36,
+            "FeatureFraction": 0.74237537812896559,
+            "LearningRate": 0.035850075477730205,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "EvlkBpv",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "LabelColumnName": "EvlkBpv",
+            "ScoreColumnName": "Score"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "ConvertType",
+      "e2": "Concatenate",
+      "e3": "FastTreeBinary",
+      "e4": "LightGbmBinary",
+      "e5": "LbfgsLogisticRegressionBinary",
+      "e6": "SdcaLogisticRegressionBinary",
+      "e7": "FastForestBinary",
+      "e8": "Naive"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7 * e8)",
+    "MetricName": "Accuracy",
+    "ModelFilePath": "C:\\Projects\\TheBestNeuralNetwork\\TheBestWebInterface\\ML\\EVLK_BPV.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 1,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 100,
+    "LabelColumn": "EvlkBpv",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "TrainValidateSplitValidationOption",
+      "SplitRatio": 0.2
+    }
+  }
+}

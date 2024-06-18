@@ -1,0 +1,233 @@
+﻿@page
+@using TheBestWebInterfaceRazorPages.ViewModels
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script>
+    // Проверяем, поддерживает ли браузер localStorage
+    if (typeof(Storage) !== "undefined") {
+        // При загрузке страницы восстанавливаем позицию скролла
+        window.addEventListener('load', function() {
+            var scrollPos = localStorage.getItem('scrollPos');
+            if (scrollPos !== null) {
+                window.scrollTo(0, scrollPos);
+                localStorage.removeItem('scrollPos');
+            }
+        });
+
+        // При отправке формы сохраняем позицию скролла
+        document.addEventListener('submit', function(event) {
+            var form = event.target.closest('form');
+            if (form) {
+                localStorage.setItem('scrollPos', window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop);
+            }
+        });
+    }
+</script>
+
+<div class="container">
+    <form method="post">
+        <div class="mt-5">
+            <h5 class="mb-3">Пациент</h5>
+            <div class="row justify-content-left">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Age" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Age" class="form-control" type="number"/>
+                        <span asp-validation-for="DataForModelViewModel.Age" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Gender" class="control-label"></label>
+                        <select asp-for="DataForModelViewModel.Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <h5 class="mb-3">Жалобы</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Complaints.Varikoz" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Complaints.Varikoz" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Complaints.Uplotnenie" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Complaints.Uplotnenie" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Complaints.Potemnenie" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Complaints.Potemnenie" class="form-check-label"></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Complaints.ZazhivshayaYazva" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Complaints.ZazhivshayaYazva" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Complaints.OtkritayaYazva" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Complaints.OtkritayaYazva" class="form-check-label"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <h5 class="mb-3">Локализация</h5>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.OtekiEst" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.OtekiEst" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.Boleznennost" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.Boleznennost" class="form-check-label"></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.Tromboflebit" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.Tromboflebit" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.GlubokieVeniProhodimi" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.GlubokieVeniProhodimi" class="form-check-label"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="mb-3">Локализация варикозных вен</h6>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.VarikozLocalization.Bedro" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.VarikozLocalization.Bedro" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.VarikozLocalization.Golen" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.VarikozLocalization.Golen" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.VarikozLocalization.Stopa" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.VarikozLocalization.Stopa" class="form-check-label"></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="mb-3">Локализация телеангиоэктазии</h6>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.TeleoangioektaziiLocalization.Bedro" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.TeleoangioektaziiLocalization.Bedro" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.TeleoangioektaziiLocalization.Golen" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.TeleoangioektaziiLocalization.Golen" class="form-check-label"></label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Localizations.TeleoangioektaziiLocalization.Stopa" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Localizations.TeleoangioektaziiLocalization.Stopa" class="form-check-label"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <h5 class="mb-3">Узи</h5>
+            <div class="form-check">
+                <input asp-for="DataForModelViewModel.Uzi.NesostVeni" class="form-check-input" type="checkbox"/>
+                <label asp-for="DataForModelViewModel.Uzi.NesostVeni" class="form-check-label"></label>
+            </div>
+            <div class="mt-4"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="mb-3">СФС</h6>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Uzi.Sfs.Reflux" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Uzi.Sfs.Reflux" class="form-check-label"></label>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Sfs.Value" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Sfs.Value" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Sfs.Value" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="mb-3">СПС</h6>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Uzi.Sps.Reflux" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Uzi.Sps.Reflux" class="form-check-label"></label>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Sps.Value" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Sps.Value" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Sps.Value" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="mb-3">БПВ</h6>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Uzi.Bpv.Reflux" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Uzi.Bpv.Reflux" class="form-check-label"></label>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Bpv.PredostSegment" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Bpv.PredostSegment" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Bpv.PredostSegment" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Bpv.SredTretBedra" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Bpv.SredTretBedra" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Bpv.SredTretBedra" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Bpv.UrovenKolena" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Bpv.UrovenKolena" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Bpv.UrovenKolena" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Bpv.VerhSredTretGoleni" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Bpv.VerhSredTretGoleni" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Bpv.VerhSredTretGoleni" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="mb-3">МПВ</h6>
+                    <div class="form-check">
+                        <input asp-for="DataForModelViewModel.Uzi.Mpv.Reflux" class="form-check-input" type="checkbox"/>
+                        <label asp-for="DataForModelViewModel.Uzi.Mpv.Reflux" class="form-check-label"></label>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataForModelViewModel.Uzi.Mpv.Value" class="control-label"></label>
+                        <input asp-for="DataForModelViewModel.Uzi.Mpv.Value" class="form-control" type="number" step="any"/>
+                        <span asp-validation-for="DataForModelViewModel.Uzi.Mpv.Value" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4"></div>
+        <button type="submit" class="btn btn-primary">Получить рекомендацию</button>
+    </form>
+    <div class="mt-4"></div>
+
+    @if (Model.DataForModelViewModel.Result.Any())
+    {
+        <div class="form-group">
+            <h5 for="comment">Рекомендация</h5>
+            <table>
+                @foreach (var item in Model.DataForModelViewModel.Result)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Probability</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+</div>
