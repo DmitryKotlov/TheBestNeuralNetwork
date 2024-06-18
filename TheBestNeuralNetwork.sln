@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestNeuralNetwork", "TheBestNeuralNetwork\TheBestNeuralNetwork.csproj", "{F7A2CE5A-0E06-4813-AE69-6748CA9F99F8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestFormatter", "TheBestFormatter\TheBestFormatter.csproj", "{8028E7EE-67B9-49BC-A468-3F4BEE9287D8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestDomain", "TheBestDomain\TheBestDomain.csproj", "{E1C96763-861C-4AD8-817E-BE894891A6F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBestWebInterfaceRazorPages", "TheBestWebInterfaceRazorPages\TheBestWebInterfaceRazorPages.csproj", "{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBestWebInterfaceRazorPages", "TheBestWebInterfaceRazorPages\TheBestWebInterfaceRazorPages.csproj", "{C98531F0-BE8A-4E24-8204-6F3BDECC69E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7A2CE5A-0E06-4813-AE69-6748CA9F99F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7A2CE5A-0E06-4813-AE69-6748CA9F99F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7A2CE5A-0E06-4813-AE69-6748CA9F99F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7A2CE5A-0E06-4813-AE69-6748CA9F99F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8028E7EE-67B9-49BC-A468-3F4BEE9287D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8028E7EE-67B9-49BC-A468-3F4BEE9287D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8028E7EE-67B9-49BC-A468-3F4BEE9287D8}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -47,7 +47,7 @@ namespace TheBestFormatter
                 }
                 catch (Exception ex)
                 {
-                    WriteLine("Error ebat", ex.ToString());
+                    WriteLine("Error", ex.ToString());
                 }
             });
 
@@ -63,7 +63,7 @@ namespace TheBestFormatter
             //    }
             //    catch(Exception ex)
             //    {
-            //        WriteLine("Error ebat", ex.ToString());
+            //        WriteLine("Error", ex.ToString());
             //    }
             //}
 
